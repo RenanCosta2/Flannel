@@ -1,0 +1,223 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    display: flex;
+    font-size: 18px;
+    font-weight: bolder;
+    height: 96px;
+    background-color: #616161;
+    align-items: center;
+}
+
+header > div.logo{
+    display: block;
+    background-color: rgba(39, 39, 39, 0.63);
+    height: 85%;
+    width: 85px;
+    border-radius: 100%;
+    margin-left: 100px;
+}
+
+header > ul {
+    list-style-type: none;
+    margin: 0;
+    padding-right: 80px;
+    flex: 1;
+}
+
+header > ul > li{
+    float: right;
+}
+
+header > ul >  li > a {
+    display: block;
+    color: white;
+    padding: 18px 18px;
+    text-decoration: none;
+    margin: 13px;
+}
+
+header > ul >  li > a.JaCliente{
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+main > section.primeiro{
+    background-color: #737373;
+    padding: 100px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main > section.primeiro > div{
+    width: 50%;
+}
+
+main > section.primeiro > div > h1.X{
+    font-size: 60px;
+    margin: 30px 0px;
+    width: 35%;
+}
+
+main > section.primeiro > div > p.lorem{
+    font-size: 18px;
+    width: 65%;
+    text-align: justify;
+}
+
+main > section.primeiro > img.confia{
+    height: 464px;
+    width: 464px;
+    border-radius: 20px;
+    display: block;
+}
+  
+main > section.segundo{
+    padding: 150px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main > section.segundo > img.confia{
+    height: 344px;
+    width: 344px;
+    border-radius: 20px;
+}
+
+main > section.segundo > div{
+    width: 60%;
+}
+
+main > section.segundo > div > h1.X{
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+main > section.segundo > div > p.lorem{
+    font-size: 18px;
+    text-align: justify;
+}
+
+main > section.planos{
+    display: flex;
+    background-color: #000000;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 80px;
+}
+
+main > section.planos > h1{
+    font-size: 60px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+main > section.planos > div{
+    position: relative;
+    background-color: #737373;
+    height: 464px;
+    width: 344px;
+    color: #CCCCCC;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+main > section.planos > div > h1{
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+main > section.planos > div > p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+main > section.planos > div > button{
+    position: absolute;
+    width: 70%;
+    height: 64px;
+    background-color: #000000;
+    color: #CCCCCC;
+    border-radius: 30px;
+    font-size: 18px;
+    bottom: 50px;
+    right: 58px;
+}
+
+main > section.brasil{
+    padding: 150px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main > section.brasil > img{
+    width: 464px;
+    height: 482.25px;
+}
+
+main > section.brasil > div{
+    width: 50%;
+}
+
+main > section.brasil > div > h1.X{
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+main > section.brasil > div > p.lorem{
+    font-size: 18px;
+    text-align: justify;
+}
+
+footer{
+    display: flex;
+    font-size: 18px;
+    font-weight: bolder;
+    height: 96px;
+    background-color: #616161;
+    color: white;
+    align-items: center;
+}
+
+footer > div.logo{
+    display: block;
+    background-color: rgba(39, 39, 39, 0.63);
+    height: 85%;
+    width: 85px;
+    border-radius: 100%;
+    margin-left: 100px;
+}
+
+footer > div.info{
+    display: flex;
+    justify-content: right;
+    flex: 1;
+    margin-right: 70px;
+}
+
+footer > div.info > p{
+    margin: auto 30px;
+}
+
+footer > div.info > p > img{
+    margin: -5px 5px;
+}
+
+footer > div > span{
+    display: block;
+    width: 2px;
+    height: 60px;
+    background-color: black;
+}

@@ -1,7 +1,11 @@
 function temConta() {
-    var botaoTem = document.getElementById('tem-conta')
+
+    var titulo = document.getElementById('titulo')
+    titulo.innerHTML = 'Entre com sua conta na XXXX.'
+
+    var botaoEntrar = document.getElementById('tem-conta')
     var botaoCriar = document.getElementById('criar-conta')
-    botaoTem.style.borderBottomWidth = '4px'
+    botaoEntrar.style.borderBottomWidth = '4px'
     botaoCriar.style.borderBottomWidth = '1px'
 
     var telaEntrar = document.getElementById('entrar')
@@ -11,9 +15,13 @@ function temConta() {
 }
 
 function criarConta() {
-    var botaoTem = document.getElementById('tem-conta')
+
+    var titulo = document.getElementById('titulo')
+    titulo.innerHTML = 'Crie sua conta na XXXX.'
+
+    var botaoEntrar = document.getElementById('tem-conta')
     var botaoCriar = document.getElementById('criar-conta')
-    botaoTem.style.borderBottomWidth = '1px'
+    botaoEntrar.style.borderBottomWidth = '1px'
     botaoCriar.style.borderBottomWidth = '4px'
 
     var telaEntrar = document.getElementById('entrar')

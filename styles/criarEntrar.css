@@ -11,12 +11,13 @@ body{
 }
 
 div.caixa{
-    display: block;
+    position: absolute;
     width: 157px;
     height: 64px;
+    top: 20px;
+    left: 8%;
     background-color: rgba(39, 39, 39, 0.63);
     border-radius: 5px;
-    margin-left: 70px;
 }
 
 main{

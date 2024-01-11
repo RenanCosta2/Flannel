@@ -205,3 +205,11 @@ footer > div > span{
     height: 60px;
     background-color: black;
 }
+
+@media screen and (min-width: 992px) and (max-width: 1480px) { /* DESKTOP */
+
+    body{
+        font-size: 11px;
+    }
+    
+}

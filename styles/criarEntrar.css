@@ -1,0 +1,206 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+div.caixa{
+    display: block;
+    width: 157px;
+    height: 64px;
+    background-color: rgba(39, 39, 39, 0.63);
+    border-radius: 5px;
+    margin-left: 70px;
+}
+
+main{
+    display: flex;
+    height: 780px;
+    margin: 30px 8%;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+main > img{
+    height: 464px;
+    width: 40%;
+    border-radius: 10px;
+}
+
+main > div{
+    height: 100%;
+    width: 40%;
+}
+
+main > div > h1{
+    font-size: 2.5em;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main > div > button{
+    width: 50%;
+    height: 50px;
+    font-size: 1.5em;
+    font-weight: bolder;
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    transition: 0.1s;
+}
+
+main > div > button#tem-conta{
+    border-bottom-width: 4px;
+}
+
+main > div > button:hover{
+    animation-name: hover-botao;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hover-botao {
+    0%{background-color: white;}
+    100%{background-color: rgba(128, 128, 128, 0.253);}
+}
+
+main > div > div > form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main > div > div > form > p{
+    font-size: 1.1em;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    margin-left: 10px;
+    width: 45%;
+}
+
+main > div > div > form > input.info{
+    width: 95%;
+    height: 25px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+main > div > div > form > input.info::placeholder{
+    color: #CCCCCC;
+    font-weight: lighter;
+}
+
+main > div > div > form > a{
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+    margin-left: 10px;
+}
+
+main > div > div > form > input.entrar{
+    width: 100%;
+    height: 56px;
+    background-color: #000000;
+    border-radius: 30px;
+    margin: 30px 0px;
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+}
+
+main > div > div > p{
+    width: 100%;
+    text-align: center;
+}
+
+main > div > div > div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+main > div > div > div > img{
+    display: block;
+    background-color: rgba(39, 39, 39, 0.63);
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    margin: 5px 20px;
+}
+
+main > div > div#cadastrar{
+    display: none;
+}
+
+main > div > div > form > input.info-empresa{
+    width: 41%;
+    height: 25px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+footer{
+    display: flex;
+    font-size: 1.1em;
+    font-weight: bolder;
+    width: 100%;
+    height: 96px;
+    background-color: #616161;
+    color: white;
+    align-items: center;
+}
+
+footer > div.logo{
+    display: block;
+    background-color: rgba(39, 39, 39, 0.63);
+    height: 80%;
+    width: 80px;
+    border-radius: 100%;
+    margin-left: 100px;
+}
+
+footer > div.info{
+    display: flex;
+    justify-content: right;
+    flex: 1;
+    margin-right: 70px;
+}
+
+footer > div.info > p{
+    margin: auto 30px;
+}
+
+footer > div.info > p > img{
+    margin: -5px 5px;
+}
+
+footer > div > span{
+    display: block;
+    width: 2px;
+    height: 60px;
+    background-color: black;
+}

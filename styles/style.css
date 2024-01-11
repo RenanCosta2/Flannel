@@ -1,13 +1,17 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 body{
     margin: 0px;
     font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    position: relative;
+    font-size: 16px;
 }
 
 header{
     display: flex;
-    font-size: 18px;
+    font-size: 1.1em;
     font-weight: bolder;
     height: 96px;
     background-color: #616161;
@@ -17,8 +21,8 @@ header{
 header > div.logo{
     display: block;
     background-color: rgba(39, 39, 39, 0.63);
-    height: 85%;
-    width: 85px;
+    height: 80%;
+    width: 80px;
     border-radius: 100%;
     margin-left: 100px;
 }
@@ -60,13 +64,13 @@ main > section.primeiro > div{
 }
 
 main > section.primeiro > div > h1.X{
-    font-size: 60px;
+    font-size: 3.8em;
     margin: 30px 0px;
     width: 40%;
 }
 
 main > section.primeiro > div > p.lorem{
-    font-size: 18px;
+    font-size: 1.1em;
     width: 65%;
     text-align: justify;
 }
@@ -96,7 +100,7 @@ main > section.segundo > div{
 }
 
 main > section.segundo > div > h1.X{
-    font-size: 60px;
+    font-size: 3.8em;
     font-weight: bolder;
 }
 
@@ -115,7 +119,7 @@ main > section.planos{
 }
 
 main > section.planos > h1{
-    font-size: 60px;
+    font-size: 3.8em;
     font-weight: bolder;
     color: white;
     text-align: center;
@@ -134,12 +138,12 @@ main > section.planos > div{
 }
 
 main > section.planos > div > h1{
-    font-size: 36px;
+    font-size: 3em;
     font-weight: bolder;
 }
 
 main > section.planos > div > p{
-    font-size: 18px;
+    font-size: 1.1em;
     text-align: justify;
 }
 
@@ -150,7 +154,7 @@ main > section.planos > div > button{
     background-color: #000000;
     color: #CCCCCC;
     border-radius: 30px;
-    font-size: 18px;
+    font-size: 1.1em;
     bottom: 50px;
     right: 58px;
 }
@@ -172,30 +176,33 @@ main > section.brasil > div{
 }
 
 main > section.brasil > div > h1.X{
-    font-size: 60px;
+    font-size: 3.8em;
     font-weight: bolder;
 }
 
 main > section.brasil > div > p.lorem{
-    font-size: 18px;
+    font-size: 1.1em;
     text-align: justify;
 }
 
 footer{
     display: flex;
-    font-size: 18px;
+    font-size: 1.1em;
     font-weight: bolder;
+    width: 100%;
     height: 96px;
     background-color: #616161;
     color: white;
     align-items: center;
+    position: absolute;
+    bottom: 0;
 }
 
 footer > div.logo{
     display: block;
     background-color: rgba(39, 39, 39, 0.63);
-    height: 85%;
-    width: 85px;
+    height: 80%;
+    width: 80px;
     border-radius: 100%;
     margin-left: 100px;
 }

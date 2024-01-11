@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/criarEntrar.css">
+</head>
+<body>
+
+    
+    <main>
+
+        <img src="../images/confia.jpeg" alt="">
+
+        <div>
+            <h1>Entre com sua conta na XXXX.</h1>
+
+            <button type="button" id="tem-conta" onclick="temConta()">Já tenho conta</button><button type="button" id="criar-conta" onclick="criarConta()">Criar conta</button>
+
+            <div id="entrar">
+                <form autocomplete="on">
+                    <p>Email</p>
+                    <input type="text" class="info" placeholder="Digite aqui o seu email" autocomplete="email" required>
+                    <p>Senha</p>
+                    <input type="password" minlength="8" class="info" placeholder="Digite aqui a sua senha" autocomplete="current-password" required>
+                    <a href="">Esqueceu sua senha?</a>
+                    <input type="submit" class="entrar" value="Entrar">
+                </form>
+                <p>Entrar com email</p>
+                <div>
+                    <img src="../images/confia.jpeg" alt="">
+                    <img src="../images/confia.jpeg" alt="">
+                    <img src="../images/confia.jpeg" alt="">
+                </div>
+            </div>
+
+            <div id="cadastrar">
+                <form autocomplete="on">
+                    <p>Email</p>
+                    <input type="text" class="info" placeholder="Digite aqui o seu email" autocomplete="email" required>
+                    <p>Senha</p>
+                    <input type="password" minlength="8" class="info" placeholder="Digite aqui a sua senha" required>
+                    <p>Confirme sua senha</p>
+                    <input type="password" minlength="8" class="info" placeholder="Confirme a sua senha" required>
+                    <p>Telefone</p> <p>CNPJ</p>
+                    <input type="" class="info-empresa" placeholder="+00 (00) 00000-0000" required>
+                    <input type="" class="info-empresa" placeholder="00.000.000/0000-00" required>
+                    <input type="submit" class="entrar" value="Prosseguir">
+                </form>
+                <p>Cadastrar com email</p>
+                <div>
+                    <img src="../images/confia.jpeg" alt="">
+                    <img src="../images/confia.jpeg" alt="">
+                    <img src="../images/confia.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="logo"></div>
+        <div class="info">
+            <p><img src="images/o-email.png" alt=""> XXXXXXXXXX@gmail.com</p>
+            <span></span>
+            <p><img src="images/chamada-telefonica.png" alt=""> (00) 00000-0000</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/criarEntrar.js"></script>
+    
+</body>
+</html>

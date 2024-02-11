@@ -7,15 +7,21 @@ body{
     min-height: 100vh;
     position: relative;
     font-size: 16px;
+    color: #1C4C79;
+    background-color: #FEFAE0;
 }
 
 header{
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     font-size: 1.1em;
     font-weight: bolder;
     height: 96px;
-    background-color: #616161;
+    background-color: #96E40E;
     align-items: center;
+    z-index: 1000;
 }
 
 header > div.logo{
@@ -30,7 +36,7 @@ header > div.logo{
 header > ul {
     list-style-type: none;
     margin: 0;
-    padding-right: 80px;
+    padding-right: 120px;
     flex: 1;
 }
 
@@ -40,46 +46,60 @@ header > ul > li{
 
 header > ul >  li > a {
     display: block;
-    color: white;
-    padding: 18px 18px;
+    padding: 18px 10px;
     text-decoration: none;
     margin: 13px;
+    color: #1C4C79;
+    font-weight: 800;
 }
 
 header > ul >  li > a.JaCliente{
-    border: 2px solid white;
+    border: 2px solid;
     border-radius: 50px;
 }
 
 main > section.primeiro{
-    background-color: #737373;
-    padding: 100px 100px;
+    background-color: #96E40E;
+    padding-left: 100px;
+    padding-top: 100px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 main > section.primeiro > div{
-    width: 50%;
+    padding-top: 20px;
+    width: 30%;
 }
 
-main > section.primeiro > div > h1.X{
+main > section.primeiro > div > h1{
     font-size: 3.8em;
+    font-weight: 800;
     margin: 30px 0px;
-    width: 40%;
+    width: 100%;
 }
 
-main > section.primeiro > div > p.lorem{
+main > section.primeiro > div > p{
     font-size: 1.1em;
-    width: 65%;
+    width: 100%;
     text-align: justify;
+    font-weight: 700;
+    padding-bottom: 20px;
+    padding-top: 5px;
 }
 
-main > section.primeiro > img.confia{
-    height: 464px;
-    width: 464px;
-    border-radius: 20px;
-    display: block;
+main > section.primeiro > div > button{
+    width: 100%;
+    height: 70px;
+    color: #FEFAE0;
+    background-color: #1C4C79;
+    font-weight: 700;
+    font-size: 1.15em;
+    border-radius: 50px;
+    border: none;
+}
+
+main > section.primeiro > img{
+    height: 671px;
+    width: 70%;
 }
   
 main > section.segundo{
@@ -90,8 +110,8 @@ main > section.segundo{
 }
 
 main > section.segundo > img.confia{
-    height: 344px;
-    width: 344px;
+    height: 430px;
+    width: 430px;
     border-radius: 20px;
 }
 
@@ -99,88 +119,108 @@ main > section.segundo > div{
     width: 60%;
 }
 
-main > section.segundo > div > h1.X{
-    font-size: 3.8em;
-    font-weight: bolder;
+main > section.segundo > div > h1{
+    font-size: 2.8em;
+    font-weight: 800;
+    text-align: justify;
 }
 
-main > section.segundo > div > p.lorem{
-    font-size: 18px;
+main > section.segundo > div > p{
+    font-size: 1.1em;
     text-align: justify;
 }
 
 main > section.planos{
     display: flex;
-    background-color: #000000;
+    background-color: #96E40E;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     padding-bottom: 80px;
+    padding: 0px 120px;
 }
 
 main > section.planos > h1{
-    font-size: 3.8em;
-    font-weight: bolder;
-    color: white;
+    color: #FEFAE0;
+    font-size: 2.6em;
+    font-weight: 800;
     text-align: center;
     width: 100%;
 }
 
 main > section.planos > div{
     position: relative;
-    background-color: #737373;
+    background-color: #FEFAE0;
     height: 464px;
     width: 344px;
-    color: #CCCCCC;
+    color: #1C4C79;
     text-align: center;
-    padding: 30px;
     border-radius: 10px;
+    margin-bottom: 50px;
 }
 
-main > section.planos > div > h1{
-    font-size: 3em;
-    font-weight: bolder;
+main > section.planos > div > div{
+    text-align: left;
+}
+
+main > section.planos > div > div > p{
+    text-align: left;
+    padding: 0px 10px;
+    color: #CCCCCC;
+    margin: 0px;
+    padding: 0px;
+}
+
+main > section.planos > div > div > h1{
+    font-size: 2.5em;
+    font-weight: 800;
+    margin: 0px;
 }
 
 main > section.planos > div > p{
     font-size: 1.1em;
     text-align: justify;
+    font-weight: light;
+    padding: 0px 30px;
 }
 
 main > section.planos > div > button{
     position: absolute;
     width: 70%;
     height: 64px;
-    background-color: #000000;
-    color: #CCCCCC;
+    background-color: #1C4C79;
+    color: #FEFAE0;
     border-radius: 30px;
+    border: none;
     font-size: 1.1em;
-    bottom: 50px;
+    font-weight: 700;
+    bottom: 30px;
     right: 58px;
 }
 
 main > section.brasil{
-    padding: 150px 100px;
+    padding: 0px 100px;
+    padding-top: 50px;
+    padding-bottom: 150px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 main > section.brasil > img{
-    width: 464px;
-    height: 482.25px;
+    width: 566px;
+    height: 544.58px;
 }
 
 main > section.brasil > div{
-    width: 50%;
+    width: 40%;
 }
 
-main > section.brasil > div > h1.X{
-    font-size: 3.8em;
-    font-weight: bolder;
+main > section.brasil > div > h1{
+    font-size: 3em;
+    font-weight: 800;
 }
 
-main > section.brasil > div > p.lorem{
+main > section.brasil > div > p{
     font-size: 1.1em;
     text-align: justify;
 }
@@ -188,11 +228,11 @@ main > section.brasil > div > p.lorem{
 footer{
     display: flex;
     font-size: 1.1em;
-    font-weight: bolder;
+    font-weight: 800;
     width: 100%;
     height: 96px;
-    background-color: #616161;
-    color: white;
+    background-color: #96E40E;
+    color: #1C4C79;
     align-items: center;
     position: absolute;
     bottom: 0;
@@ -219,12 +259,13 @@ footer > div.info > p{
 }
 
 footer > div.info > p > img{
-    margin: -5px 5px;
+    margin: -5px 10px;
+    color: #1C4C79;
 }
 
 footer > div > span{
     display: block;
-    width: 2px;
+    width: 1px;
     height: 60px;
-    background-color: black;
+    background-color: #1C4C79;
 }

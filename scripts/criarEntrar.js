@@ -1,31 +1,35 @@
 function temConta() {
 
-    var titulo = document.getElementById('titulo')
-    titulo.innerHTML = 'Entre com sua conta na XXXX.'
+    let titulo = document.getElementById('titulo')
+    titulo.innerHTML = 'Entre com sua conta Flannel'
+    let imagem = document.getElementById('img')
+    imagem.src = '../images/homem-com-laptop.jpg'
 
-    var botaoEntrar = document.getElementById('tem-conta')
-    var botaoCriar = document.getElementById('criar-conta')
+    let botaoEntrar = document.getElementById('tem-conta')
+    let botaoCriar = document.getElementById('criar-conta')
     botaoEntrar.style.borderBottomWidth = '4px'
     botaoCriar.style.borderBottomWidth = '1px'
 
-    var telaEntrar = document.getElementById('entrar')
+    let telaEntrar = document.getElementById('entrar')
     telaEntrar.style.display = 'block'
-    var telaCadastrar = document.getElementById('cadastrar')
+    let telaCadastrar = document.getElementById('cadastrar')
     telaCadastrar.style.display = 'none'
 }
 
 function criarConta() {
 
-    var titulo = document.getElementById('titulo')
-    titulo.innerHTML = 'Crie sua conta na XXXX.'
+    let titulo = document.getElementById('titulo')
+    titulo.innerHTML = 'Crie sua conta Flannel'
+    let imagem = document.getElementById('img')
+    imagem.src = '../images/homem-apontando-para-cima.jpg'
 
-    var botaoEntrar = document.getElementById('tem-conta')
-    var botaoCriar = document.getElementById('criar-conta')
+    let botaoEntrar = document.getElementById('tem-conta')
+    let botaoCriar = document.getElementById('criar-conta')
     botaoEntrar.style.borderBottomWidth = '1px'
     botaoCriar.style.borderBottomWidth = '4px'
 
-    var telaEntrar = document.getElementById('entrar')
+    let telaEntrar = document.getElementById('entrar')
     telaEntrar.style.display = 'none'
-    var telaCadastrar = document.getElementById('cadastrar')
+    let telaCadastrar = document.getElementById('cadastrar')
     telaCadastrar.style.display = 'block'
 }

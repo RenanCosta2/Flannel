@@ -2,47 +2,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body{
+    height: 100%;
     margin: 0px;
     font-family: 'Inter', sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font-size: 12px;
+    font-size: 16px;
 }
 
-div.caixa{
+header > img{
+    padding-left: 150px;
+    height: 96px;
+    width: 252.47px;
     position: absolute;
-    width: 157px;
-    height: 64px;
-    top: 20px;
-    left: 8%;
-    background-color: rgba(39, 39, 39, 0.63);
-    border-radius: 5px;
 }
 
 main{
     display: flex;
-    height: 780px;
-    margin: 30px 8%;
+    height: 100%;
+    margin: 0px 8%;
+    margin-top: 80px;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
     flex: 1;
 }
 
 main > img{
-    height: 464px;
-    width: 40%;
-    border-radius: 10px;
+    max-height: 100%;
+    width: 550px;
 }
 
 main > div{
     height: 100%;
-    width: 40%;
+    max-width: 629px;
+    width: 50%;
 }
 
 main > div > h1{
-    font-size: 2.5em;
-    font-weight: bolder;
+    font-size: 2.6em;
+    font-weight: 800;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -51,16 +50,16 @@ main > div > button{
     width: 50%;
     height: 50px;
     font-size: 1.5em;
-    font-weight: bolder;
+    font-weight: 800;
     background: none;
     border: none;
     border-bottom: 1px solid black;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     box-sizing: border-box;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     padding-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     transition: 0.1s;
 }
 
@@ -87,8 +86,9 @@ main > div > div > form{
     justify-content: space-between;
 }
 
-main > div > div > form > p{
+main > div > div > form > label{
     font-size: 1.1em;
+    font-weight: 600;
     margin-top: 15px;
     margin-bottom: 8px;
     margin-left: 10px;
@@ -96,11 +96,11 @@ main > div > div > form > p{
 }
 
 main > div > div > form > input.info{
-    width: 95%;
-    height: 12px;
+    width: 629px;
+    height: 56px;
     border-radius: 10px;
     font-size: 1.1em;
-    padding: 15px;
+    padding-left: 15px;
     margin-bottom: 10px;
 }
 
@@ -112,9 +112,10 @@ main > div > div > form > input.info::placeholder{
 main > div > div > form > a{
     font-size: 1.1em;
     font-weight: bold;
-    text-decoration: underline;
+    text-decoration: none;
     color: black;
     margin-left: 10px;
+    border-bottom: 2px solid black;
 }
 
 main > div > div > form > input.entrar{
@@ -130,8 +131,10 @@ main > div > div > form > input.entrar{
 }
 
 main > div > div > p{
+    font-size: 1.1em;
     width: 100%;
     text-align: center;
+    color: #CCCCCC;
 }
 
 main > div > div > div{
@@ -140,11 +143,11 @@ main > div > div > div{
     width: 100%;
     align-items: center;
     justify-content: center;
+    margin-bottom: 80px;
 }
 
 main > div > div > div > img{
     display: block;
-    background-color: rgba(39, 39, 39, 0.63);
     height: 80px;
     width: 80px;
     border-radius: 100%;
@@ -155,33 +158,60 @@ main > div > div#cadastrar{
     display: none;
 }
 
-main > div > div > form > input.info-empresa{
-    width: 41%;
+main > div > div#cadastrar{
+    display: none;
+}
+
+main > div > div#cadastrar > p{
+    margin-top: 0px;
+}
+
+main > div > div#cadastrar > div{
+    margin-bottom: 5px;
+}
+
+main > div > div > form > div {
+    width: 45%;
+    margin-top: 15px;
+}
+
+main > div > div > form > div > label{
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-left: 10px;
+    width: 45%;
+}
+
+main > div > div > form > div > input.info::placeholder{
+    color: #CCCCCC;
+    font-weight: lighter;
+}
+
+main > div > div > form > div > input.info{
+    width: 88%;
     height: 25px;
     border-radius: 10px;
     font-size: 1.1em;
     padding: 15px;
     margin-bottom: 10px;
+    margin-top: 8px;
 }
 
 footer{
     display: flex;
     font-size: 1.1em;
-    font-weight: bolder;
+    font-weight: 800;
     width: 100%;
     height: 96px;
-    background-color: #616161;
-    color: white;
+    background-color: #96E40E;
+    color: #1C4C79;
     align-items: center;
+    bottom: 0;
 }
 
-footer > div.logo{
-    display: block;
-    background-color: rgba(39, 39, 39, 0.63);
-    height: 80%;
-    width: 80px;
-    border-radius: 100%;
-    margin-left: 100px;
+footer > img{
+    height: 80px;
+    padding-left: 80px;
 }
 
 footer > div.info{
@@ -204,12 +234,4 @@ footer > div > span{
     width: 2px;
     height: 60px;
     background-color: black;
-}
-
-@media screen and (min-width: 992px) and (max-width: 1480px) { /* DESKTOP */
-
-    body{
-        font-size: 11px;
-    }
-    
 }

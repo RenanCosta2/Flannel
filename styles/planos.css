@@ -1,0 +1,183 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    position: relative;
+    font-size: 16px;
+    color: #1C4C79;
+}
+
+header > img{
+    padding-left: 200px;
+    height: 96px;
+    width: 252.47px;
+    position: absolute;
+}
+
+main{
+    height: 100%;
+}
+
+main > div{
+    padding: 80px;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+main > div > h1{
+    font-size: 2.625em;
+    font-weight: 800;
+}
+
+main > div > p{
+    font-size: 1.125em;
+    font-weight: 300;
+    width: 60%;
+    margin: auto;
+}
+
+main > section.planos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 80px;
+    padding: 0px 120px;
+}
+
+main > section.planos > h1{
+    color: #FEFAE0;
+    font-size: 2.6em;
+    font-weight: 800;
+    text-align: center;
+    width: 100%;
+}
+
+main > section.planos > div{
+    position: relative;
+    height: 540px;
+    width: 344px;
+    color: #FEFAE0;
+    background-color: #1C4C79;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+main > section.planos > div > div.plano{
+    padding-left: 30px;
+    padding-top: 15px;
+    text-align: left;
+}
+
+main > section.planos > div > div.plano > p{
+    text-align: left;
+    padding: 0px 10px;
+    color: #CCCCCC;
+    margin: 0px;
+    padding: 0px;
+}
+
+main > section.planos > div > div.plano > h1{
+    font-size: 2.5em;
+    font-weight: 800;
+    margin: 0px;
+}
+
+main > section.planos > div > ul{
+    font-size: 1em;
+    text-align: justify;
+    font-weight: light;
+    padding: 0px 35px;
+    margin-bottom: 10px;
+}
+
+main > section.planos > div > ul > li{
+    list-style: none;
+    padding: 7px 0px;
+}
+
+main > section.planos > div > ul > li.check{
+    padding-left: 30px;
+    background-image: url('../images/check-branco.png'); 
+    background-repeat: no-repeat; 
+    background-size: 18px 18px; 
+    background-position: 0 30%; 
+}
+
+main > section.planos > div > ul > li.x{
+    padding-left: 30px;
+    background-image: url('../images/x-branco.png'); 
+    background-repeat: no-repeat; 
+    background-size: 16px 16px; 
+    background-position: 0 30%; 
+}
+
+main > section.planos > div > div.mensalidade > p{
+    margin: 0px;
+    color: #CCCCCC;
+}
+
+main > section.planos > div > div.mensalidade > p > span{
+    font-size: 2.3em;
+    font-weight: 700;
+    color: #CDF982;
+}
+
+main > section.planos > div > button{
+    position: absolute;
+    width: 70%;
+    height: 64px;
+    background-color: #1C4C79;
+    color: #FEFAE0;
+    border-radius: 30px;
+    border-color: #FEFAE0;
+    border: #FEFAE0 3px solid;
+    font-size: 1.1em;
+    font-weight: 700;
+    bottom: 20px;
+    right: 58px;
+}
+
+footer{
+    display: flex;
+    font-size: 1.1em;
+    font-weight: 800;
+    width: 100%;
+    height: 96px;
+    background-color: #96E40E;
+    color: #1C4C79;
+    align-items: center;
+    bottom: 0;
+}
+
+footer > img{
+    height: 80px;
+    padding-left: 80px;
+}
+
+footer > div.info{
+    display: flex;
+    justify-content: right;
+    flex: 1;
+    margin-right: 70px;
+}
+
+footer > div.info > p{
+    margin: auto 30px;
+}
+
+footer > div.info > p > img{
+    margin: -5px 5px;
+}
+
+footer > div > span{
+    display: block;
+    width: 2px;
+    height: 60px;
+    background-color: black;
+}

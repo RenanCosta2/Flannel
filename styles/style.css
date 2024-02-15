@@ -24,13 +24,10 @@ header{
     z-index: 1000;
 }
 
-header > div.logo{
-    display: block;
-    background-color: rgba(39, 39, 39, 0.63);
-    height: 80%;
-    width: 80px;
-    border-radius: 100%;
-    margin-left: 100px;
+header > img{
+    height: 96px;
+    width: 252.31px;
+    padding-left: 120px;
 }
 
 header > ul {
@@ -60,9 +57,11 @@ header > ul >  li > a.JaCliente{
 
 main > section.primeiro{
     background-color: #96E40E;
-    padding-left: 100px;
     padding-top: 100px;
+    padding-left: 100px;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 main > section.primeiro > div{
@@ -98,8 +97,8 @@ main > section.primeiro > div > button{
 }
 
 main > section.primeiro > img{
-    height: 671px;
-    width: 70%;
+    max-width: 65%;
+    min-width: 65%;
 }
   
 main > section.segundo{
@@ -151,19 +150,21 @@ main > section.planos > h1{
 main > section.planos > div{
     position: relative;
     background-color: #FEFAE0;
-    height: 464px;
-    width: 344px;
+    height: 525px;
+    width: 28%;
     color: #1C4C79;
     text-align: center;
     border-radius: 10px;
     margin-bottom: 50px;
 }
 
-main > section.planos > div > div{
+main > section.planos > div > div.plano{
+    padding-left: 30px;
+    padding-top: 15px;
     text-align: left;
 }
 
-main > section.planos > div > div > p{
+main > section.planos > div > div.plano > p{
     text-align: left;
     padding: 0px 10px;
     color: #CCCCCC;
@@ -171,17 +172,50 @@ main > section.planos > div > div > p{
     padding: 0px;
 }
 
-main > section.planos > div > div > h1{
+main > section.planos > div > div.plano > h1{
     font-size: 2.5em;
     font-weight: 800;
     margin: 0px;
 }
 
-main > section.planos > div > p{
-    font-size: 1.1em;
+main > section.planos > div > ul{
+    font-size: 1em;
     text-align: justify;
     font-weight: light;
-    padding: 0px 30px;
+    padding: 0px 35px;
+    margin-bottom: 10px;
+}
+
+main > section.planos > div > ul > li{
+    list-style: none;
+    padding: 7px 0px;
+}
+
+main > section.planos > div > ul > li.check{
+    padding-left: 30px;
+    background-image: url('../images/check.png'); 
+    background-repeat: no-repeat; 
+    background-size: 18px 18px; 
+    background-position: 0 30%; 
+}
+
+main > section.planos > div > ul > li.x{
+    padding-left: 30px;
+    background-image: url('../images/x.png'); 
+    background-repeat: no-repeat; 
+    background-size: 16px 16px; 
+    background-position: 0 30%; 
+}
+
+main > section.planos > div > div.mensalidade > p{
+    margin: 0px;
+    color: #CCCCCC;
+}
+
+main > section.planos > div > div.mensalidade > p > span{
+    font-size: 2.3em;
+    font-weight: 700;
+    color: #96E40E;
 }
 
 main > section.planos > div > button{
@@ -194,8 +228,23 @@ main > section.planos > div > button{
     border: none;
     font-size: 1.1em;
     font-weight: 700;
-    bottom: 30px;
+    bottom: 20px;
     right: 58px;
+}
+
+main > section.brasil > div{
+    width: 40%;
+}
+
+main > section.brasil > div > h1{
+    font-size: 3em;
+    font-weight: 800;
+}
+
+main > section.brasil > div > p{
+    font-size: 1.1em;
+    font-weight: 300;
+    text-align: justify;
 }
 
 main > section.brasil{
@@ -211,20 +260,6 @@ main > section.brasil > img{
     height: 544.58px;
 }
 
-main > section.brasil > div{
-    width: 40%;
-}
-
-main > section.brasil > div > h1{
-    font-size: 3em;
-    font-weight: 800;
-}
-
-main > section.brasil > div > p{
-    font-size: 1.1em;
-    text-align: justify;
-}
-
 footer{
     display: flex;
     font-size: 1.1em;
@@ -238,13 +273,9 @@ footer{
     bottom: 0;
 }
 
-footer > div.logo{
-    display: block;
-    background-color: rgba(39, 39, 39, 0.63);
-    height: 80%;
-    width: 80px;
-    border-radius: 100%;
-    margin-left: 100px;
+footer > img{
+    height: 80px;
+    padding-left: 80px;
 }
 
 footer > div.info{
@@ -265,7 +296,7 @@ footer > div.info > p > img{
 
 footer > div > span{
     display: block;
-    width: 1px;
+    width: 2px;
     height: 60px;
     background-color: #1C4C79;
 }

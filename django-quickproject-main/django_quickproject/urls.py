@@ -19,12 +19,11 @@ from django.urls import path
 from rest_framework.routers import SimpleRouter
 from rest_framework.authtoken import views
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
-from users.api.views import UserProfileExampleViewSet, GerenteViewSet, EmpresaViewSet, FuncionarioViewSet
+from users.api.views import GerenteViewSet, EmpresaViewSet, FuncionarioViewSet
 from estacionamentos.api.views import EstacionamentoListCreateView, EnderecoListCreateView
 
 router = SimpleRouter()
 
-router.register("users", UserProfileExampleViewSet, basename="users")
 router.register("api/estacionamentos", EstacionamentoListCreateView, basename="estacionamentos-list")
 router.register("api/enderecos", EnderecoListCreateView, basename="enderecos-list")
 router.register("api/empresas", EmpresaViewSet, basename="empresas-list")

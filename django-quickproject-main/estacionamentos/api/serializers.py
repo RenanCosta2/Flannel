@@ -4,7 +4,7 @@ from estacionamentos.models import Estacionamento, Endereco
 class EstacionamentoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Estacionamento
-        fields = ['nome', 'idEmpresa', 'idEndereco', 'idGerente', 'idfuncionario']
+        fields = ['idEmpresa', 'idEndereco', 'idGerente', 'idfuncionario']
 
 class EnderecoSerializer(serializers.ModelSerializer):
     class Meta:

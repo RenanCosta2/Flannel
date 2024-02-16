@@ -4,7 +4,7 @@ from users.models import  Empresa, Gerente, Funcionario
 class EmpresaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Empresa
-        fields = ['id', 'nome', 'email', 'telefone','cnpj', 'user']
+        fields = ['id', 'nome', 'email', 'telefone', 'cnpj', "plano", 'user']
  
 class GerenteSerializer(serializers.ModelSerializer):
     class Meta:

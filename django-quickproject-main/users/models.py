@@ -8,6 +8,7 @@ class Empresa(models.Model):
     email = models.CharField(max_length=150)
     telefone = models.CharField(max_length=12)
     cnpj = models.CharField(max_length=14, default='')
+    plano = models.CharField(max_length=20, default='')
     user = models.OneToOneField(User, on_delete=models.CASCADE)
 
     class Meta:

@@ -2,35 +2,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body{
-    height: 100%;
     margin: 0px;
     font-family: 'Inter', sans-serif;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     font-size: 16px;
 }
 
-header > img{
-    padding-left: 150px;
-    height: 96px;
-    width: 252.47px;
+header > a > img{
+    padding-left: 120px;
     position: absolute;
+}
+
+#opacidade{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000000;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+#nova-senha{
+    width: 1056px;
+    height: 640px;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    z-index: 10000000;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    align-items: center;
+    justify-content: left;
+    border-radius: 20px;
+}
+
+#nova-senha > img.x{
+    position: absolute;
+    top: 4%;
+    right: 2%;
+    cursor: pointer;
+}
+
+#nova-senha > div{
+    width: 400px;
+    padding: 0px 50px 50px 60px;
+    align-items: center;
+}
+
+#nova-senha > div > h1{
+    font-size: 2.625em;
+    font-weight: 800;
+}
+
+#nova-senha > div > p{
+    font-size: 1.125em;
+    font-weight: 600;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+#nova-senha > div > form > label{
+    font-size: 1.125em;
+    font-weight: 600;
+    margin-left: 10px;
+    width: 45%;
+}
+
+#nova-senha > div > form > input.info{
+    width: 377px;
+    height: 50px;
+    border-radius: 10px;
+    border: #000000 3px solid;
+    font-size: 1.125em;
+    padding-left: 15px;
+    margin-top: 8px;
+}
+
+#nova-senha > div > form > input.info::placeholder{
+    color: #CCCCCC;
+    font-weight: lighter;
+}
+
+#nova-senha > div > form > input.enviar{
+    width: 395px;
+    height: 56px;
+    background-color: #000000;
+    border-radius: 30px;
+    border: #000000 3px solid;
+    font-size: 1.5em;
+    font-weight:700;
+    color: white;
+    cursor: pointer;
+    margin-top: 70px;
+    margin-bottom: 30px;
 }
 
 main{
     display: flex;
-    height: 100%;
+    height: 100vh;
     margin: 0px 8%;
     margin-top: 80px;
     justify-content: space-between;
     align-items: end;
     flex: 1;
-}
-
-main > img{
-    max-height: 100%;
-    width: 550px;
 }
 
 main > div{
@@ -87,7 +164,7 @@ main > div > div > form{
 }
 
 main > div > div > form > label{
-    font-size: 1.1em;
+    font-size: 1.125em;
     font-weight: 600;
     margin-top: 15px;
     margin-bottom: 8px;
@@ -97,9 +174,10 @@ main > div > div > form > label{
 
 main > div > div > form > input.info{
     width: 629px;
-    height: 56px;
+    height: 50px;
     border-radius: 10px;
-    font-size: 1.1em;
+    border: #000000 3px solid;
+    font-size: 1.125em;
     padding-left: 15px;
     margin-bottom: 10px;
 }
@@ -109,20 +187,30 @@ main > div > div > form > input.info::placeholder{
     font-weight: lighter;
 }
 
-main > div > div > form > a{
-    font-size: 1.1em;
+main > div > div#entrar > form > img.visualizacao{
+    position: absolute;
+    right: 135px;
+    padding-top: 15px;
+}
+
+main > div > div > form > p{
+    font-size: 1.125em;
     font-weight: bold;
     text-decoration: none;
     color: black;
     margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     border-bottom: 2px solid black;
+    cursor: pointer;
 }
 
 main > div > div > form > input.entrar{
     width: 100%;
-    height: 56px;
+    height: 50px;
     background-color: #000000;
     border-radius: 30px;
+    border: #000000 3px solid;
     margin: 30px 0px;
     font-size: 1.5em;
     font-weight: bolder;
@@ -131,7 +219,7 @@ main > div > div > form > input.entrar{
 }
 
 main > div > div > p{
-    font-size: 1.1em;
+    font-size: 1.125em;
     width: 100%;
     text-align: center;
     color: #CCCCCC;
@@ -147,10 +235,6 @@ main > div > div > div{
 }
 
 main > div > div > div > img{
-    display: block;
-    height: 80px;
-    width: 80px;
-    border-radius: 100%;
     margin: 5px 20px;
 }
 
@@ -170,13 +254,25 @@ main > div > div#cadastrar > div{
     margin-bottom: 5px;
 }
 
+main > div > div#cadastrar > form > img.visualizacao{
+    position: absolute;
+    right: 135px;
+    top: 445px;
+}
+
+main > div > div#cadastrar > form > img.visualizacao-confirmar{
+    position: absolute;
+    right: 135px;
+    padding-top: 35px;
+}
+
 main > div > div > form > div {
     width: 45%;
     margin-top: 15px;
 }
 
 main > div > div > form > div > label{
-    font-size: 1.1em;
+    font-size: 1.125em;
     font-weight: 600;
     margin-left: 10px;
     width: 45%;
@@ -191,47 +287,9 @@ main > div > div > form > div > input.info{
     width: 88%;
     height: 25px;
     border-radius: 10px;
-    font-size: 1.1em;
+    border: #000000 3px solid;
+    font-size: 1.125em;
     padding: 15px;
     margin-bottom: 10px;
     margin-top: 8px;
-}
-
-footer{
-    display: flex;
-    font-size: 1.1em;
-    font-weight: 800;
-    width: 100%;
-    height: 96px;
-    background-color: #96E40E;
-    color: #1C4C79;
-    align-items: center;
-    bottom: 0;
-}
-
-footer > img{
-    height: 80px;
-    padding-left: 80px;
-}
-
-footer > div.info{
-    display: flex;
-    justify-content: right;
-    flex: 1;
-    margin-right: 70px;
-}
-
-footer > div.info > p{
-    margin: auto 30px;
-}
-
-footer > div.info > p > img{
-    margin: -5px 5px;
-}
-
-footer > div > span{
-    display: block;
-    width: 2px;
-    height: 60px;
-    background-color: black;
 }

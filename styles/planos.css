@@ -10,10 +10,8 @@ body{
     color: #1C4C79;
 }
 
-header > img{
-    padding-left: 200px;
-    height: 96px;
-    width: 252.47px;
+header > a > img{
+    padding-left: 120px;
     position: absolute;
 }
 
@@ -36,8 +34,9 @@ main > div > h1{
 main > div > p{
     font-size: 1.125em;
     font-weight: 300;
-    width: 60%;
+    width: 62%;
     margin: auto;
+    text-align: center;
 }
 
 main > section.planos{
@@ -103,18 +102,16 @@ main > section.planos > div > ul > li{
 
 main > section.planos > div > ul > li.check{
     padding-left: 30px;
-    background-image: url('../images/check-branco.png'); 
+    background-image: url('../images/check-branco.svg'); 
     background-repeat: no-repeat; 
-    background-size: 18px 18px; 
     background-position: 0 30%; 
 }
 
 main > section.planos > div > ul > li.x{
     padding-left: 30px;
-    background-image: url('../images/x-branco.png'); 
+    background-image: url('../images/x-branco.svg'); 
     background-repeat: no-repeat; 
-    background-size: 16px 16px; 
-    background-position: 0 30%; 
+    background-position: 0 30%;
 }
 
 main > section.planos > div > div.mensalidade > p{
@@ -141,43 +138,4 @@ main > section.planos > div > button{
     font-weight: 700;
     bottom: 20px;
     right: 58px;
-}
-
-footer{
-    display: flex;
-    font-size: 1.1em;
-    font-weight: 800;
-    width: 100%;
-    height: 96px;
-    background-color: #96E40E;
-    color: #1C4C79;
-    align-items: center;
-    bottom: 0;
-}
-
-footer > img{
-    height: 80px;
-    padding-left: 80px;
-}
-
-footer > div.info{
-    display: flex;
-    justify-content: right;
-    flex: 1;
-    margin-right: 70px;
-}
-
-footer > div.info > p{
-    margin: auto 30px;
-}
-
-footer > div.info > p > img{
-    margin: -5px 5px;
-}
-
-footer > div > span{
-    display: block;
-    width: 2px;
-    height: 60px;
-    background-color: black;
 }

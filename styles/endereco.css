@@ -11,10 +11,8 @@ body{
     font-size: 16px;
 }
 
-header > img{
-    padding-left: 150px;
-    height: 96px;
-    width: 252.47px;
+header > a > img{
+    padding-left: 120px;
     position: absolute;
 }
 
@@ -26,6 +24,119 @@ main{
     justify-content: space-between;
     align-items: end;
     flex: 1;
+}
+
+#opacidade{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000000;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+#termos-de-uso{
+    width: 1056px;
+    height: 640px;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    z-index: 10000000;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    align-items: center;
+    justify-content: left;
+    border-radius: 20px;
+}
+
+#termos-de-uso > img.x{
+    position: absolute;
+    top: 4%;
+    right: 2%;
+    cursor: pointer;
+}
+
+#termos-de-uso > div{
+    width: 100%;
+    padding: 40px 0px 0px 70px;
+    align-items: center;
+}
+
+#termos-de-uso > div > h1{
+    font-size: 2.625em;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+
+#termos-de-uso > div > p{
+    font-size: 1.125em;
+    color: #CCCCCC;
+    text-align: justify;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+#termos-de-uso > div > p.condicoes{
+    width: 808px;
+    height: 374px;
+    color: black;
+    overflow: auto;
+    padding: 0px 30px 0px 30px;
+    margin: 0px;
+}
+
+#politica-privacidade{
+    width: 1056px;
+    height: 640px;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    z-index: 10000000;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    align-items: center;
+    justify-content: left;
+    border-radius: 20px;
+}
+
+#politica-privacidade > img.x{
+    position: absolute;
+    top: 4%;
+    right: 2%;
+    cursor: pointer;
+}
+
+#politica-privacidade > div{
+    width: 100%;
+    padding: 40px 0px 0px 70px;
+    align-items: center;
+}
+
+#politica-privacidade > div > h1{
+    font-size: 2.625em;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+
+#politica-privacidade > div > p{
+    font-size: 1.125em;
+    color: #CCCCCC;
+    text-align: justify;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+#politica-privacidade > div > p.condicoes{
+    width: 808px;
+    height: 374px;
+    color: black;
+    overflow: auto;
+    padding: 0px 30px 0px 30px;
+    margin: 0px;
 }
 
 main > img{
@@ -132,9 +243,15 @@ main > div > div > form > label.termos{
     width: 100%;
 }
 
+main > div > div > form > label.termos > input{
+    padding: 0px;
+    margin: 0px;
+}
+
 main > div > div > form > label.termos > span{
     font-weight: 800;
     border-bottom: 2px solid black;
+    cursor: pointer;
 }
 
 main > div > div > form > input.criarConta{
@@ -147,43 +264,4 @@ main > div > div > form > input.criarConta{
     font-weight: bolder;
     color: white;
     cursor: pointer;
-}
-
-footer{
-    display: flex;
-    font-size: 1.1em;
-    font-weight: 800;
-    width: 100%;
-    height: 96px;
-    background-color: #96E40E;
-    color: #1C4C79;
-    align-items: center;
-    bottom: 0;
-}
-
-footer > img{
-    height: 80px;
-    padding-left: 80px;
-}
-
-footer > div.info{
-    display: flex;
-    justify-content: right;
-    flex: 1;
-    margin-right: 70px;
-}
-
-footer > div.info > p{
-    margin: auto 30px;
-}
-
-footer > div.info > p > img{
-    margin: -5px 5px;
-}
-
-footer > div > span{
-    display: block;
-    width: 2px;
-    height: 60px;
-    background-color: black;
 }

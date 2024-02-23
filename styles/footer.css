@@ -1,0 +1,39 @@
+
+footer{
+    display: flex;
+    font-size: 1.1em;
+    font-weight: 800;
+    width: 100%;
+    height: 96px;
+    background-color: #96E40E;
+    color: #1C4C79;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+}
+
+footer > img{
+    padding-left: 80px;
+}
+
+footer > div.info{
+    display: flex;
+    justify-content: right;
+    flex: 1;
+    margin-right: 70px;
+}
+
+footer > div.info > p{
+    margin: auto 30px;
+}
+
+footer > div.info > p > img{
+    margin: -5px 5px;
+}
+
+footer > div > span{
+    display: block;
+    width: 1.5px;
+    height: 60px;
+    background-color: #1C4C79;
+}

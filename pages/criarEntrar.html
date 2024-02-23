@@ -5,14 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../styles/criarEntrar.css">
+    <link rel="stylesheet" href="../styles/footer.css">
 </head>
 <body>
 
-    <header><img src="../images/LOGO-PNG.png" alt=""></header>
+    <header><a href="index.html"><img src="../images/logo/LOGO-SVG.svg" alt=""></a></header>
     
+    <div id="opacidade"></div>
+    <div id="nova-senha">
+        <img class="x" src="../images/x.svg" alt="" onclick="fecharAbaNovaSenha()">
+        <div>
+            <h1>Nova Senha</h1>
+            <p>Enviaremos as instruções por email para você definir nova senha.</p>
+
+            <form action="">
+                <label>Email</label>
+                <input type="text" class="info" placeholder="Digite aqui o seu email" autocomplete="email" required>
+
+                <input type="submit" class="enviar" value="Enviar email">
+            </form>
+        </div>
+
+        <img class="homem" src="../images/pessoas/homem-com-laptop-com-duvidas_1368-5027.svg" alt="">
+    </div>
+
     <main>
 
-        <img id="img" src="../images/homem-com-laptop.jpg" alt="">
+        <img id="img" src="../images/pessoas/homem-com-laptop.svg" alt="">
 
         <div>
             <h1 id="titulo">Entre com sua conta Flannel</h1>
@@ -25,14 +44,15 @@
                     <input type="text" class="info" placeholder="Digite aqui o seu email" autocomplete="email" required>
                     <label>Senha</label>
                     <input type="password" minlength="8" class="info" placeholder="Digite aqui a sua senha" autocomplete="current-password" required>
-                    <a href="">Esqueceu sua senha?</a>
+                    <img class="visualizacao" src="../images/olho-off.svg" alt="">
+                    <p onclick="abrirAbaNovaSenha()">Esqueceu sua senha?</p>
                     <input type="submit" class="entrar" value="Entrar">
                 </form>
                 <p>Entrar com email</p>
                 <div>
-                    <img src="../images/Face.jpg" alt="">
-                    <img src="../images/Gmail.jpg" alt="">
-                    <img src="../images/Apple.jpg" alt="">
+                    <img src="../images/logo/Face.svg" alt="">
+                    <img src="../images/logo/Gmail.svg" alt="">
+                    <img src="../images/logo/Apple.svg" alt="">
                 </div>
             </div>
 
@@ -42,8 +62,10 @@
                     <input type="text" class="info" placeholder="Digite aqui o seu email" autocomplete="email" required>
                     <label>Senha</label>
                     <input type="password" minlength="8" class="info" placeholder="Digite aqui a sua senha" required>
+                    <img class="visualizacao" src="../images/olho-off.svg" alt="">
                     <label>Confirme sua senha</label>
                     <input type="password" minlength="8" class="info" placeholder="Confirme a sua senha" required>
+                    <img class="visualizacao-confirmar" src="../images/olho-off.svg" alt="">
                     <div>
                         <label>Telefone</label><br>
                         <input type="" class="info" placeholder="+00 (00) 00000-0000" required>
@@ -56,9 +78,9 @@
                 </form>
                 <p>Cadastrar com email</p>
                 <div>
-                    <img src="../images/Face.jpg" alt="">
-                    <img src="../images/Gmail.jpg" alt="">
-                    <img src="../images/Apple.jpg" alt="">
+                    <img src="../images/logo/Face.svg" alt="">
+                    <img src="../images/logo/Gmail.svg" alt="">
+                    <img src="../images/logo/Apple.svg" alt="">
                 </div>
             </div>
         </div>
@@ -67,11 +89,11 @@
     </main>
 
     <footer>
-        <img src="../images/3.png" alt="">
+        <img src="../images/logo/3.svg" alt="">
         <div class="info">
-            <p><img src="images/o-email.png" alt=""> flannel@gmail.com</p>
+            <p><img src="../images/email.svg" alt=""> flannel@gmail.com</p>
             <span></span>
-            <p><img src="images/chamada-telefonica.png" alt=""> (84) 98147-0000</p>
+            <p><img src="../images/telefone.svg" alt=""> (84) 98147-0000</p>
         </div>
     </footer>
 

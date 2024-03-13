@@ -13,7 +13,7 @@
     
     <div id="opacidade"></div>
     <div id="nova-senha">
-        <img class="x" src="../images/x.svg" alt="" onclick="fecharAbaNovaSenha()">
+        <img class="x" src="../images/x.svg" alt="" onclick="visualizacaoAbaNovaSenha()">
         <div>
             <h1>Nova Senha</h1>
             <p>Enviaremos as instruções por email para você definir nova senha.</p>
@@ -36,16 +36,17 @@
         <div>
             <h1 id="titulo">Entre com sua conta Flannel</h1>
 
-            <button type="button" id="tem-conta" onclick="temConta()">Já tenho conta</button><button type="button" id="criar-conta" onclick="criarConta()">Criar conta</button>
+            <button type="button" id="tem-conta" onclick="telasContas()">Já tenho conta</button><button type="button" id="criar-conta" onclick="telasContas()">Criar conta</button>
 
             <div id="entrar">
                 <form autocomplete="on">
                     <label>Email</label>
                     <input type="text" class="info" placeholder="Digite aqui o seu email" autocomplete="email" required>
                     <label>Senha</label>
-                    <input type="password" minlength="8" class="info" placeholder="Digite aqui a sua senha" autocomplete="current-password" required>
-                    <img class="visualizacao" src="../images/olho-off.svg" alt="">
-                    <p onclick="abrirAbaNovaSenha()">Esqueceu sua senha?</p>
+                    <input id="senha-entrar" type="password" minlength="8" class="info" placeholder="Digite aqui a sua senha" autocomplete="current-password" required>
+                    <img id="olho-off-entrar" class="visualizacao" src="../images/olho-off.svg" onclick="visualizacaoSenha('senha-entrar', 'olho-off-entrar', 'olho-on-entrar')" alt="">
+                    <img id="olho-on-entrar" class="visualizacao" src="../images/olho-on.svg" style="display: none;" onclick="visualizacaoSenha('senha-entrar', 'olho-off-entrar', 'olho-on-entrar')" alt="">
+                    <p onclick="visualizacaoAbaNovaSenha()">Esqueceu sua senha?</p>
                     <input type="submit" class="entrar" value="Entrar">
                 </form>
                 <p>Entrar com email</p>
@@ -61,11 +62,13 @@
                     <label>Email</label>
                     <input type="text" class="info" placeholder="Digite aqui o seu email" autocomplete="email" required>
                     <label>Senha</label>
-                    <input type="password" minlength="8" class="info" placeholder="Digite aqui a sua senha" required>
-                    <img class="visualizacao" src="../images/olho-off.svg" alt="">
+                    <input id="senha-cadastrar" type="password" minlength="8" class="info" placeholder="Digite aqui a sua senha" required>
+                    <img id="olho-off-cadastrar" class="visualizacao" src="../images/olho-off.svg" onclick="visualizacaoSenha('senha-cadastrar', 'olho-off-cadastrar', 'olho-on-cadastrar')" alt="">
+                    <img id="olho-on-cadastrar" class="visualizacao" src="../images/olho-on.svg" style="display: none;" onclick="visualizacaoSenha('senha-cadastrar', 'olho-off-cadastrar', 'olho-on-cadastrar')" alt="">
                     <label>Confirme sua senha</label>
-                    <input type="password" minlength="8" class="info" placeholder="Confirme a sua senha" required>
-                    <img class="visualizacao-confirmar" src="../images/olho-off.svg" alt="">
+                    <input id="senha-cadastrar-confirmar" type="password" minlength="8" class="info" placeholder="Confirme a sua senha" required>
+                    <img id="olho-off-cadastrar-confirmar" class="visualizacao-confirmar" src="../images/olho-off.svg" onclick="visualizacaoSenha('senha-cadastrar-confirmar', 'olho-off-cadastrar-confirmar', 'olho-on-cadastrar-confirmar')" alt="">
+                    <img id="olho-on-cadastrar-confirmar" class="visualizacao-confirmar" src="../images/olho-on.svg" style="display: none;" onclick="visualizacaoSenha('senha-cadastrar-confirmar', 'olho-off-cadastrar-confirmar', 'olho-on-cadastrar-confirmar')" alt="">
                     <div>
                         <label>Telefone</label><br>
                         <input type="" class="info" placeholder="+00 (00) 00000-0000" required>

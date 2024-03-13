@@ -1,7 +1,0 @@
-Tive que mudar a variavel rpds-py para o valor 0.17.1 para rodar no Windows
-
-rpds-py==0.17.1
-
-para rodar no Linux: 
-
-rpds-py==0.9.2

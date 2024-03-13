@@ -1,31 +1,25 @@
-function fecharAbaTermos(){
+function visualizacaoAbaTermos(){
     
     let termosDeUso = document.getElementById('termos-de-uso')
-    termosDeUso.style.display = 'none'
     let opacidade = document.getElementById('opacidade')
-    opacidade.style.display = 'none'
+    if (termosDeUso.style.display == 'block') {
+        termosDeUso.style.display = 'none'
+        opacidade.style.display = 'none'
+    } else{
+        termosDeUso.style.display = 'block'
+        opacidade.style.display = 'block'
+    }
 }
 
-function abrirAbaTermos(){
+function visualizacaoAbaPrivacidade(){
     
-    let termosDeUso = document.getElementById('termos-de-uso')
-    termosDeUso.style.display = 'block'
+    let politicaPrivacidade = document.getElementById('politica-privacidade')
     let opacidade = document.getElementById('opacidade')
-    opacidade.style.display = 'block'
-}
-
-function fecharAbaPrivacidade(){
-    
-    let termosDeUso = document.getElementById('politica-privacidade')
-    termosDeUso.style.display = 'none'
-    let opacidade = document.getElementById('opacidade')
-    opacidade.style.display = 'none'
-}
-
-function abrirAbaPrivacidade(){
-    
-    let termosDeUso = document.getElementById('politica-privacidade')
-    termosDeUso.style.display = 'block'
-    let opacidade = document.getElementById('opacidade')
-    opacidade.style.display = 'block'
+    if (politicaPrivacidade.style.display == 'block') {
+        politicaPrivacidade.style.display = 'none'
+        opacidade.style.display = 'none'
+    } else{
+        politicaPrivacidade.style.display = 'block'
+        opacidade.style.display = 'block'
+    }
 }

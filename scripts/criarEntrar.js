@@ -1,51 +1,61 @@
-function temConta() {
+function telasContas() {
 
     let titulo = document.getElementById('titulo')
-    titulo.innerHTML = 'Entre com sua conta Flannel'
     let imagem = document.getElementById('img')
-    imagem.src = '../images/pessoas/homem-com-laptop.svg'
 
     let botaoEntrar = document.getElementById('tem-conta')
     let botaoCriar = document.getElementById('criar-conta')
-    botaoEntrar.style.borderBottomWidth = '4px'
-    botaoCriar.style.borderBottomWidth = '1px'
 
     let telaEntrar = document.getElementById('entrar')
-    telaEntrar.style.display = 'block'
     let telaCadastrar = document.getElementById('cadastrar')
-    telaCadastrar.style.display = 'none'
+
+    if (telaEntrar.style.display == 'none') {
+        
+        titulo.innerHTML = 'Entre com sua conta Flannel'
+        imagem.src = '../images/pessoas/homem-com-laptop.svg'
+        botaoEntrar.style.borderBottomWidth = '4px'
+        botaoCriar.style.borderBottomWidth = '1px'
+        telaEntrar.style.display = 'block'
+        telaCadastrar.style.display = 'none'
+    } else{
+        titulo.innerHTML = 'Crie sua conta Flannel'
+        imagem.src = '../images/pessoas/homem-apontando-para-cima.svg'
+        botaoEntrar.style.borderBottomWidth = '1px'
+        botaoCriar.style.borderBottomWidth = '4px'
+        telaEntrar.style.display = 'none'
+        telaCadastrar.style.display = 'block'
+    }
 }
 
-function criarConta() {
-
-    let titulo = document.getElementById('titulo')
-    titulo.innerHTML = 'Crie sua conta Flannel'
-    let imagem = document.getElementById('img')
-    imagem.src = '../images/pessoas/homem-apontando-para-cima.svg'
-
-    let botaoEntrar = document.getElementById('tem-conta')
-    let botaoCriar = document.getElementById('criar-conta')
-    botaoEntrar.style.borderBottomWidth = '1px'
-    botaoCriar.style.borderBottomWidth = '4px'
-
-    let telaEntrar = document.getElementById('entrar')
-    telaEntrar.style.display = 'none'
-    let telaCadastrar = document.getElementById('cadastrar')
-    telaCadastrar.style.display = 'block'
-}
-
-function fecharAbaNovaSenha(){
+function visualizacaoAbaNovaSenha(){
     
     let divNovaSenha = document.getElementById('nova-senha')
-    divNovaSenha.style.display = 'none'
+    
     let opacidade = document.getElementById('opacidade')
-    opacidade.style.display = 'none'
+    
+    if (divNovaSenha.style.display == 'flex') {
+        divNovaSenha.style.display = 'none'
+        opacidade.style.display = 'none'
+    }else{
+        divNovaSenha.style.display = 'flex'
+        opacidade.style.display = 'block'
+    }
 }
 
-function abrirAbaNovaSenha(){
-    
-    let divNovaSenha = document.getElementById('nova-senha')
-    divNovaSenha.style.display = 'flex'
-    let opacidade = document.getElementById('opacidade')
-    opacidade.style.display = 'block'
+function visualizacaoSenha(idInput, olhoOff, olhoOn){
+
+    console.log(idInput)
+    let input = document.getElementById(idInput)
+    let olho_on = document.getElementById(olhoOn)
+    let olho_off = document.getElementById(olhoOff)
+    if (input.type === "password") {
+        input.type = "text"
+        olho_on.style.display = 'block'
+        olho_off.style.display = 'none'
+    } else{
+        input.type = "password"
+        olho_on.style.display = 'none'
+        olho_off.style.display = 'block'
+    }
+
 }

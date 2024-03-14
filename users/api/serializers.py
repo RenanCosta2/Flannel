@@ -1,8 +1,15 @@
 from rest_framework import serializers
-from users.models import UserProfileExample
+from users.models import GerenteGeral, GerenteLocal
 
-class UserProfileExampleSerializer(serializers.ModelSerializer):
+class GerenteGeralSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model = UserProfileExample
-        fields = ['id', 'address', 'phone_number', 'birth_date', 'user']
+        model = GerenteGeral
+        fields = ['id', 'nome', 'cpf', 'telefone', 'email', 'senha', 'user']
+
+
+class GerenteLocalSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = GerenteLocal
+        fields = ['id', 'nome', 'cpf', 'telefone', 'email', 'senha', 'user']

@@ -21,11 +21,14 @@ from rest_framework.authtoken import views
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
 from users.api.views import GerenteGeralViewSet, GerenteLocalViewSet
 
+from estacionamentos.api.views import EmpresaListCreateView
+
 router = SimpleRouter()
 
 router.register("GerenteGeral", GerenteGeralViewSet, basename="GerenteGeral")
-
 router.register("GerenteLocal", GerenteLocalViewSet, basename="GerenteLocal")
+
+router.register("api/empresas", EmpresaListCreateView, basename="empresa-list")
 
 urlpatterns = [
     path("admin/", admin.site.urls),

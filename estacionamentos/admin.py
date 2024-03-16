@@ -1,7 +1,6 @@
 from django.contrib import admin
-from .models import Empresa #, Estacionamento
+from .models import Empresa , Estacionamento
 
-# Register your models here.
 
 admin.site.register(Empresa)
-# admin.site.register(Estacionamento)
+admin.site.register(Estacionamento)

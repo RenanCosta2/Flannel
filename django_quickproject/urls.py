@@ -20,7 +20,6 @@ from rest_framework.routers import SimpleRouter
 from rest_framework.authtoken import views
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
 from users.api.views import GerenteGeralViewSet, GerenteLocalViewSet
-
 from estacionamentos.api.views import EmpresaListCreateView
 
 router = SimpleRouter()

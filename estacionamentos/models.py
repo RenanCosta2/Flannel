@@ -5,7 +5,7 @@ from django.db import models
 class Empresa(models.Model):
     nome = models.CharField(verbose_name="Nome da empresa", max_length=100, unique=True, null=False, blank=False)
     cnpj = models.CharField(verbose_name="CNPJ da empresa", max_length=14, unique=True, null=False, blank=False)
-    email = models.CharField(verbose_name="Email da empresa", max_length=100, unique=True, null=False, blank=False)
+    email = models.EmailField(verbose_name="Email da empresa", max_length=100, unique=True, null=False, blank=False)
     plano = models.IntegerField(verbose_name="Plano de assinatura", default=0)
 
     def __str__(self):

@@ -16,18 +16,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from rest_framework.routers import SimpleRouter
+from rest_framework.routers import DefaultRouter
 from rest_framework.authtoken import views
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
 from users.api.views import GerenteGeralViewSet, GerenteLocalViewSet
-from estacionamentos.api.views import EmpresaListCreateView
+from estacionamentos.api.views import EmpresaViewSet
 
-router = SimpleRouter()
+router = DefaultRouter()
 
 router.register("GerenteGeral", GerenteGeralViewSet, basename="GerenteGeral")
 router.register("GerenteLocal", GerenteLocalViewSet, basename="GerenteLocal")
-
-router.register("api/empresas", EmpresaListCreateView, basename="empresa-list")
+router.register(r"api/empresas", EmpresaViewSet, basename="empresa-view-set")
 
 urlpatterns = [
     path("admin/", admin.site.urls),

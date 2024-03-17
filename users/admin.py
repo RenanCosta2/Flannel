@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import GerenteGeral, GerenteLocal
 
-# Register your models here.
+admin.site.register(GerenteGeral)
+admin.site.register(GerenteLocal)
+

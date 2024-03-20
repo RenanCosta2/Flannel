@@ -20,13 +20,16 @@ from rest_framework.routers import DefaultRouter
 from rest_framework.authtoken import views
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
 from users.api.views import GerenteGeralViewSet, GerenteLocalViewSet
-from estacionamentos.api.views import EmpresaViewSet
+from estacionamentos.api.views import EmpresaViewSet, EstacionamentoViewSet, VeiculoEstacionadoViewSet, HistoricoViewSet
 
 router = DefaultRouter()
 
 router.register("GerenteGeral", GerenteGeralViewSet, basename="GerenteGeral")
 router.register("GerenteLocal", GerenteLocalViewSet, basename="GerenteLocal")
-router.register(r"api/empresas", EmpresaViewSet, basename="empresa-view-set")
+router.register("api/empresas", EmpresaViewSet, basename="empresa-view-set")
+router.register("api/estacionamentos", EstacionamentoViewSet, basename="estacionamento-view-set")
+router.register("api/veiculos", VeiculoEstacionadoViewSet, basename="veiculo-view-set")
+router.register("api/historicos", HistoricoViewSet, basename="historico-view-set")
 
 urlpatterns = [
     path("admin/", admin.site.urls),

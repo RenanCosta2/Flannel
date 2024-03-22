@@ -37,11 +37,11 @@ class Usuario{
     telefone : String
 }
 
-Empresa "1" -- "0..*" Estacionamento
-Empresa "1" -- "0..*" GerenteLocal
-Empresa "1" -- "1" GerenteGeral
-Estacionamento "1" -- "0..*" Locacao
-Estacionamento "1" -- "1" GerenteLocal
+Empresa "1" -right- "0..*" Estacionamento : possui >
+Empresa "1" -- "0..*" GerenteLocal : possui >
+Empresa "1" -- "1" GerenteGeral : possui >
+Estacionamento "1" -right- "0..*" Locacao : possui >
+Estacionamento "1" -- "1" GerenteLocal : possui >
 GerenteGeral --|> Usuario
 GerenteLocal --|> Usuario
 

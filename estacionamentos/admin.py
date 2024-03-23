@@ -1,8 +1,7 @@
 from django.contrib import admin
-from .models import Empresa , Estacionamento, VeiculoEstacionado, Historico
+from .models import Empresa , Estacionamento, Locacao
 
 
 admin.site.register(Empresa)
 admin.site.register(Estacionamento)
-admin.site.register(VeiculoEstacionado)
-admin.site.register(Historico)
+admin.site.register(Locacao)

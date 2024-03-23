@@ -1,0 +1,50 @@
+@startuml "Banco de Dados"
+
+class Empresa{
+    nome : String
+    email : Email
+    telefone : String
+    cnpj : String
+    plano : int
+}
+
+class Estacionamento{
+    idEmpresa : int
+    rua : String
+    numero : String
+    cidade : String
+    bairro : String
+    estado : String
+    cep : String
+    capacidade : int
+    lotacao : int
+}
+
+class Locacao{
+    dataEntrada : DateTime
+    dataSaida : DateTime
+    valor : Decimal
+    placaVeiculo : String
+    flannerPrime : boolean
+}
+
+class GerenteGeral
+class GerenteLocal
+
+class Usuario{
+    nome : String
+    email : String
+    senha : String
+    cpf : String
+    telefone : String
+}
+
+Empresa "1" -right- "0..*" Estacionamento : possui >
+Empresa "1" -- "0..*" GerenteLocal : possui >
+Empresa "1" -- "1" GerenteGeral : possui >
+Estacionamento "1" -right- "0..*" Locacao : possui >
+Estacionamento "1" -- "1" GerenteLocal : possui >
+GerenteGeral --|> Usuario
+GerenteLocal --|> Usuario
+
+@enduml

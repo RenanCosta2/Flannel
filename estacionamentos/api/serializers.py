@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from estacionamentos.models import Empresa, Estacionamento, VeiculoEstacionado, Historico
+from estacionamentos.models import Empresa, Estacionamento, Locacao
 
 class EmpresaSerializer(serializers.ModelSerializer):
     class Meta: 
@@ -11,12 +11,7 @@ class EstacionamentoSerializer(serializers.ModelSerializer):
         model = Estacionamento
         fields = ['id', 'idEmpresa', 'rua', 'numero', 'bairro', 'cidade', 'estado', 'capacidade', 'lotacao']
 
-class VeiculoEstacionadoSerializer(serializers.ModelSerializer):
+class LocacaoSerializer(serializers.ModelSerializer):
     class Meta:
-        model = VeiculoEstacionado
-        fields = ['id', 'idEstacionamento', 'dataEntrada', 'placaCarro', 'cpf']
-
-class HistoricoSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Historico
-        fields = ['id', 'idEstacionamento', 'dataEntrada', 'dataSaida', 'placaCarro', 'cpf']
+        model = Locacao
+        fields = ['id', 'idEstacionamento', 'dataEntrada', 'dataSaida', 'valor', 'placaCarro', 'flannerPrime']

@@ -24,21 +24,13 @@ class Estacionamento(models.Model):
     def __str__(self):
         return self.idEmpresa.cnpj
     
-class VeiculoEstacionado(models.Model):
-    idEstacionamento = models.ForeignKey(Estacionamento, verbose_name="Id do estacionamento", on_delete=models.CASCADE)
-    cpf = models.CharField(verbose_name="CPF", max_length=11, unique=True, null=False, blank=False)
-    placaCarro = models.CharField(verbose_name="Placa do carro", max_length=7, unique=True, null=False, blank=False)
-    dataEntrada = models.DateTimeField(verbose_name="Data de entrada", auto_now_add=True)
+class Locacao(models.Model):
+    idEstacionamento = models.ForeignKey(Estacionamento, verbose_name="Id do Estacionamento", on_delete=models.CASCADE)
+    dataEntrada = models.DateTimeField(verbose_name="Data e hora que o veículo entrou no estacionamento", auto_now=False, auto_now_add=True)
+    dataSaida = models.DateTimeField(verbose_name="Data e hora que o veículo entrou no estacionamento", auto_now=True, auto_now_add=False)
+    valor = models.DecimalField(verbose_name="Valor do pagamento", max_digits=5, decimal_places=2)
+    placaCarro = models.CharField(verbose_name="Placa do veículo", max_length=7, null=False, blank=False)
+    flannerPrime = models.BooleanField(verbose_name="Veículo é assinante do Flanner Prime", default=False)
         
-    def __str__(self):
-        return self.placaCarro
-        
-class Historico(models.Model):
-    idEstacionamento = models.ForeignKey(Estacionamento, verbose_name="Id do estacionamento", on_delete=models.CASCADE)
-    cpf = models.CharField(verbose_name="CPF", max_length=11, unique=False, null=False, blank=False)
-    placaCarro = models.CharField(verbose_name="Placa do carro", max_length=7, unique=False, null=False, blank=False)
-    dataEntrada = models.DateTimeField(verbose_name="Data de entrada")
-    dataSaida = models.DateTimeField(verbose_name="Data de saída", auto_now_add=True)
-
     def __str__(self):
         return self.placaCarro

@@ -8,6 +8,9 @@ class Empresa(models.Model):
     email = models.EmailField(verbose_name="Email da empresa", max_length=100, unique=True, null=False, blank=False)
     plano = models.IntegerField(verbose_name="Plano de assinatura", default=0)
 
+    class Meta:
+        ordering= ['id']
+
     def __str__(self):
         return self.nome
 
@@ -21,6 +24,9 @@ class Estacionamento(models.Model):
     capacidade = models.IntegerField(verbose_name="Capacidade de veiculos do estacionamento", null=False, blank=False)
     lotacao = models.IntegerField(verbose_name="Número veiculos no estacionamento", default=0)
 
+    class Meta:
+        ordering= ['id']
+
     def __str__(self):
         return self.idEmpresa.cnpj
     
@@ -31,6 +37,9 @@ class Locacao(models.Model):
     valor = models.DecimalField(verbose_name="Valor do pagamento", max_digits=5, decimal_places=2)
     placaCarro = models.CharField(verbose_name="Placa do veículo", max_length=7, null=False, blank=False)
     flannerPrime = models.BooleanField(verbose_name="Veículo é assinante do Flanner Prime", default=False)
+
+    class Meta:
+        ordering= ['id']
         
     def __str__(self):
         return self.placaCarro

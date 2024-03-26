@@ -10,7 +10,7 @@ class GerenteGeral(models.Model):
     telefone = models.CharField(max_length=11, verbose_name='Telefone', null=False, unique=True, blank=False)
     email = models.EmailField(max_length=100, verbose_name='E-mail', blank=False, null=False, unique=True)
     senha = models.CharField(max_length=50, verbose_name='Senha', blank=False, null=False, unique=False)
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    #user = models.OneToOneField(User, on_delete=models.CASCADE)
 
     class Meta:
         verbose_name = "Gerente Geral"
@@ -23,7 +23,7 @@ class GerenteLocal(models.Model):
     telefone = models.CharField(max_length=11, verbose_name='Telefone', null=False, unique=True, blank=False)
     email = models.EmailField(max_length=100, verbose_name='E-mail', blank=False, null=False, unique=True)
     senha = models.CharField(max_length=50, verbose_name='Senha', blank=False, null=False, unique=False)
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    #user = models.OneToOneField(User, on_delete=models.CASCADE)
 
     class Meta:
         verbose_name = "Gerente Local"

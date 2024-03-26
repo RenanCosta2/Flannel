@@ -10,8 +10,8 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 router = DefaultRouter()
 
 # Rotas dos gerentes
-router.register(r"GerenteGeral", GerenteGeralViewSet, basename="GerenteGeral")
-router.register(r"GerenteLocal", GerenteLocalViewSet, basename="GerenteLocal")
+router.register(r"gerentegeral", GerenteGeralViewSet, basename="gerente_geral")
+router.register(r"gerentelocal", GerenteLocalViewSet, basename="gerente_local")
 
 # Rotas do estacionamento
 router.register(r"empresas", EmpresaViewSet, basename="empresas")
